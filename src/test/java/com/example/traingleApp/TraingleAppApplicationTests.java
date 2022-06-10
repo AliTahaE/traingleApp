@@ -65,6 +65,11 @@ class TraingleAppApplicationTests {
 		requestAndAssert("EQUILATERAL", "2", "2", "2");
 	}
 
+	@Test
+	public void nonTraingleNumbersTest() {
+		requestAndAssert("NOT_TRAINGLE", "1", "1", "3");
+	}
+
 
 	@Test
 	public void twoSameNumbersTest() {
